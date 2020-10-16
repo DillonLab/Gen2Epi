@@ -38,6 +38,12 @@
       p.	export PATH=$PATH:/installation-path/quast-4.5
       q.	export PATH=$PATH:/installation-path/Prodigal-2.6.3
       r.	export PATH=$PATH:/installation-path/bowtie2-2.3.2
+      
+      Alternately, users can also copy the above-mentioned commands [a-r] in “.bashrc” and then set the path in the current working directory by running the following command
+      
+      	“source .bashrc”  
+
+      
   4)	Copy the Gen2Epi_Scripts folder in your current working directory.
 
 # How to use
