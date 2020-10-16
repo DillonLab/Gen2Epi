@@ -44,8 +44,11 @@
       
       	“source .bashrc”  
 
-      
-  4)	Copy the Gen2Epi_Scripts folder in your current working directory.
+  4)	Copy the test dataset in the current working directory under	
+  
+  	“/home/user/Desktop/Test_DATA”
+  
+  5)	Copy the Gen2Epi_Scripts folder in your current working directory.
 
 # How to use
 
