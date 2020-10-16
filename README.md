@@ -73,7 +73,45 @@ If you have thousands of samples then the input file in the above-mentioned form
   
 For more information, please see “Pipeline_Documentation_V0.1.pdf”  
 
-# Contact
+ 2)	For Quality Check and Trimming
+ 
+ 		"perl WGS_SIBP_P1.pl /home/user/Desktop/Test_DATA /home/user/Desktop/Test_DATA/WHO_Data both 3 3 4:15 30”
+ 
+ 3)	For De-novo assembly 
+ 
+ 		“perl WGS_SIBP_P2.pl /home/user/Desktop/Test_DATA/Input Trimming trimmed 2”
+		
+ 4)	For Chromosome Scaffolding
+ 
+ 		“Perl WGS_SIBP_P3-Chr-C1.pl /home/user/Desktop/Test_DATA/Input /home/user/Desktop/Test_DATA/WHO_Full_Reference_genome/Chromosome /home/user/Desktop/Gen2Epi_Scripts/Chrom_AssemblyTrimmedReads /home/user/Desktop/Test_DATA/WHO_Genome_Annotation/Chromosome 1 TXT”
+
+ 5)	For Plasmid-type identification
+ 
+ 		“Perl WGS_SIBP_P3-Plas_C1.pl /home/user/Desktop/Test_DATA/Input Plasmid_AssemblyTrimmedReads 1 /home/user/Desktop/Test_DATA/Plasmid.fasta”
+
+ 6)	For Epidemiological analysis and AMR prediction of the assembled scaffolds: Please make sure to delete the existing output file before running the following commands.
+
+	a.	NG-MAST
+
+		“perl WGS_SIBP_P4_Epi.pl /home/user/Desktop/Test_DATA/Input Chr_Scaffolds NGMAST”
+		
+	b.	NG-MAST
+	
+		“perl WGS_SIBP_P4_Epi.pl /home/user/Desktop/Test_DATA/Input Chr_Scaffolds MLST MLST-Genes.fasta MLST_alleles.fasta pubMLST_profile.txt”
+		
+		Please Note: In case you encounter “BLAST database index” error then make sure to build the blast database for “MLST-Genes.fasta” using the following command:
+		“makeblastdb –in MLST-Genes.fasta –db nucl”
+
+	c.	NG-MAST
+	
+		“perl WGS_SIBP_P4_Epi.pl /home/user/Desktop/Test_DATA/Input Chr_Scaffolds ngstar AMR-Genes-NgStar.fasta AMR-Genes-NgStar-alleles.fasta”
+		
+	d.	Chromosome-mediated Tetracycline Resistance
+	
+		“perl TetRes.pl rpsJ.fasta Chr_Scaffolds/All_Sequences TetResOut”
+		“perl SeqProt.pl TetResOut”
+
+# Contacts
 
 Professor Jo-Anne R Dillon: j.dillon@usask.ca 
 
@@ -81,11 +119,11 @@ Professor Anthony Kusalik: kusalik@cs.usask.ca
 
 Dr. Reema Singh: res498@usask.ca ; res498@mail.usask.ca
 
-# Alternate links
+# Alternative links
 
 https://github.com/ReemaSingh/Gen2Epi
 
-ftp://www.cs.usask.ca/pub/combi 
+ftp://www.cs.usask.ca/pub/combi  
 
 # Citation
 
