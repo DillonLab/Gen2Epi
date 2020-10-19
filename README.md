@@ -75,7 +75,7 @@ For more information, please see “Pipeline_Documentation_V0.1.pdf”
 
  2)	For Quality Check and Trimming
  
- 		"perl WGS_SIBP_P1.pl /home/user/Desktop/Test_DATA /home/user/Desktop/Test_DATA/WHO_Data both 3 3 4:15 30”
+ 		"perl WGS_SIBP_P1.pl /home/user/Desktop/Test_DATA/Input /home/user/Desktop/Test_DATA/WHO_Data both 3 3 4:15 30”
  
  3)	For De-novo assembly 
  
