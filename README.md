@@ -44,11 +44,18 @@
       
       	“source .bashrc”  
 
-  4)	Copy the test dataset in the current working directory under	
+  4)	Open the terminal and use the following commands:
   
-  	“/home/user/Desktop/Test_DATA”
+         "git clone https://github.com/DillonLab/Gen2Epi.git"
+         "cd Gen2Epi"
   
   5)	Copy the Gen2Epi_Scripts folder in your current working directory.
+  
+  6)	Copy the test dataset in the current working directory under	
+  
+         “/home/user/Desktop/Test_DATA”
+  
+  
 
 # How to use
 
