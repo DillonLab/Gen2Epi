@@ -46,14 +46,15 @@
 
   4)	Open the terminal and use the following commands:
   
-         "git clone https://github.com/DillonLab/Gen2Epi.git"
-         "cd Gen2Epi"
+         	"git clone https://github.com/DillonLab/Gen2Epi.git"
+	 
+         	"cd Gen2Epi"
   
   5)	Copy the Gen2Epi_Scripts folder in your current working directory.
   
   6)	Copy the test dataset in the current working directory under	
   
-         “/home/user/Desktop/Test_DATA”
+        	 “/home/user/Desktop/Test_DATA”
   
   
 
